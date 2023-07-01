@@ -53,3 +53,6 @@ function handleBuyTicket() {
     if (movie.capacity - movie.tickets_sold > 0) {
         // Reduce the available tickets count
         movie.tickets_sold += 1;
+
+        // Update the movie details on the right side
+    movieTickets.textContent = 'Available Tickets: ' + (movie.capacity - movie.tickets_sold);
