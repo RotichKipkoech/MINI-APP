@@ -105,3 +105,21 @@ body {
     background-color: #ccc;
     cursor: not-allowed;
   }
+
+  /* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+    .films-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .details-container {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
