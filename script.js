@@ -56,3 +56,11 @@ function handleBuyTicket() {
 
         // Update the movie details on the right side
     movieTickets.textContent = 'Available Tickets: ' + (movie.capacity - movie.tickets_sold);
+
+     // Disable the button if all tickets are sold out
+     if (movie.capacity - movie.tickets_sold === 0) {
+        const buyTicketBtn = document.getElementById('buy-ticket-btn');
+        buyTicketBtn.disabled = true;
+      }
+    }
+  }
