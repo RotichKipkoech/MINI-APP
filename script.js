@@ -40,3 +40,7 @@ function displayMovieDetails(movie) {
     moviePoster.src = movie.poster;
   
     buyTicketBtn.disabled = (movie.capacity - movie.tickets_sold) === 0;
+
+     // Set the displayed movie variable
+  displayedMovie = movie;
+}
