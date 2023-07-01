@@ -26,3 +26,29 @@ body {
     margin-top: 0;
     color: #333;
   }
+
+  /* Movie List Styles */
+.films-container {
+    width: 40%;
+    padding: 20px;
+  }
+  
+  ul#films {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .film.item {
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 4px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .film.item:hover {
+    background-color: #e6e6e6;
+  }
+  
