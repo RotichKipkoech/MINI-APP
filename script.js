@@ -64,3 +64,7 @@ function handleBuyTicket() {
       }
     }
   }
+
+  // Attach the handleBuyTicket function to the buy ticket button
+const buyTicketBtn = document.getElementById('buy-ticket-btn');
+buyTicketBtn.addEventListener('click', handleBuyTicket);
