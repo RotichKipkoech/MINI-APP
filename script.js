@@ -16,3 +16,9 @@ fetch('http://localhost:3000/films')
         li.addEventListener('click', () => displayMovieDetails(film));
         filmsList.appendChild(li);
       });
+
+      // Display the details of the first movie
+    if (films.length > 0) {
+        displayMovieDetails(films[0]);
+      }
+    });
