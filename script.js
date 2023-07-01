@@ -22,3 +22,21 @@ fetch('http://localhost:3000/films')
         displayMovieDetails(films[0]);
       }
     });
+
+    // Function to display movie details
+function displayMovieDetails(movie) {
+    // Update the movie details on the right side
+    const movieTitle = document.getElementById('movie-title');
+    const movieRuntime = document.getElementById('movie-runtime');
+    const movieShowtime = document.getElementById('movie-showtime');
+    const movieTickets = document.getElementById('movie-tickets');
+    const buyTicketBtn = document.getElementById('buy-ticket-btn');
+    const moviePoster = document.getElementById('movie-poster');
+  
+    movieTitle.textContent = movie.title;
+    movieRuntime.textContent = 'Runtime: ' + movie.runtime + ' minutes';
+    movieShowtime.textContent = 'Showtime: ' + movie.showtime;
+    movieTickets.textContent = 'Available Tickets: ' + (movie.capacity - movie.tickets_sold);
+    moviePoster.src = movie.poster;
+  
+    buyTicketBtn.disabled = (movie.capacity - movie.tickets_sold) === 0;
