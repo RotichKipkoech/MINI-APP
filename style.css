@@ -52,3 +52,56 @@ body {
     background-color: #e6e6e6;
   }
   
+  /* Movie Details Styles */
+.details-container {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  #movie-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .poster-container {
+    width: 180px;
+    margin-right: 20px;
+  }
+  
+  #movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .info-container {
+    flex: 1;
+  }
+  
+  #movie-title {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #movie-runtime,
+  #movie-showtime,
+  #movie-tickets {
+    margin: 6px 0;
+    color: #555;
+  }
+  
+  #buy-ticket-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #buy-ticket-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
