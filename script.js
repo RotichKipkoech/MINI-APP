@@ -49,3 +49,7 @@ function displayMovieDetails(movie) {
 function handleBuyTicket() {
     const movieTickets = document.getElementById('movie-tickets');
     const movie = displayedMovie;
+
+    if (movie.capacity - movie.tickets_sold > 0) {
+        // Reduce the available tickets count
+        movie.tickets_sold += 1;
