@@ -44,3 +44,8 @@ function displayMovieDetails(movie) {
      // Set the displayed movie variable
   displayedMovie = movie;
 }
+
+// Function to handle the buy ticket button click event
+function handleBuyTicket() {
+    const movieTickets = document.getElementById('movie-tickets');
+    const movie = displayedMovie;
